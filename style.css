@@ -1,0 +1,161 @@
+.logo {
+
+    width: 50px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+}
+
+
+/* Header layout */
+.header-home {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    /* Logo left, menu right */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: burlywood;
+    border-bottom: 2px solid #ccc;
+}
+
+.center-logo .logo {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Logo styling */
+.logo {
+    width: 400px;
+    height: auto;
+}
+
+/* Dropdown button */
+.dropbtn {
+
+    background-color: #333;
+    color: whitesmoke;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.menu-button {
+    align-items: center;
+    padding-right: 10%;
+}
+
+.dropbtn:hover {
+    background-color: #555;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    /* Align dropdown to the right */
+    background-color: whitesmoke;
+    min-width: 160px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    z-index: 10;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show dropdown when .show is added */
+.show {
+    display: block;
+}
+
+.house1 {
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+
+    /* Make intro section stack vertically */
+}
+
+.intro {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+}
+
+.intro {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    height: auto;
+    background-color: rgb(87, 165, 165);
+    position: relative;
+    padding: 20px;
+    flex-direction: column;
+
+
+}
+
+.intro p {
+    padding: 18px;
+    text-align: center;
+    font-size: 20px;
+    text-align: justify;
+
+}
+
+.haymachine {
+    width: 90%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.pics {
+    display: flex;
+    /* position: absolute; */
+    justify-content: space-around;
+    font-size: medium;
+    margin: 10px;
+
+}
+
+.house2 {
+    width: 75%;
+    height: auto;
+}
+
+.pics ul {
+    list-style-type: none;
+
+}
+
+.pics ul li p {
+    font-size: 25px;
+    font-weight: 200;
+}

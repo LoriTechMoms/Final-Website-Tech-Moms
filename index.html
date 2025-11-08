@@ -9,25 +9,22 @@
 </head>
 
 <body>
-    <header class="header-home">
-        <div class="centerlogo">
-            <img src="images/logo.png" alt="logo" class="logo">
-        </div>
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo"> <img src="images/logo.png" alt="logo" class="logo"></a>
 
-
-        <!-- Dropdown Menu -->
-        <div class="dropdown">
-            <button class="dropbtn">Menu</button>
-            <div class="dropdown-content">
-                <a href="#">Home</a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
                 <a href="about.html">About</a>
-                <a href="#">Services</a>
-                <a href="#">Contact</a>
-            </div>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <!-- Mobile menu button -->
+            <button class="menu-toggle">☰</button>
         </div>
     </header>
 
-    <script src="script.js"></script>
+
 
     <img src="images/house1.png" alt="house" class="house1">
 
@@ -43,18 +40,25 @@
 
 
 
-        <input type="What is your name?">
+        <footer class="footer">
 
-
-        <footer>
-            Connect with Me on
-            <br>>
-            <a href="https://www.linkedin.com/feed/">
-                Linkedin
+            <a href="https://www.instagram.com/hintonhomesteadhideaway/" target="_blank">
+                <img src="images/instagram.png" alt="Instagram" class="social-icon">
             </a>
+            <a href="https://www.airbnb.com/rooms/31508859?search_mode=regular_search&adults=1&check_in=2025-11-07&check_out=2025-11-12&children=0&infants=0&pets=0&source_impression_id=p3_1762484219_P3Yzv63aLQg69nWU&previous_page_section_name=1000&federated_search_id=5cb00232-5d09-4ab3-85df-0eead9ac3937"
+                target="_blank">
+                <img src="images/airbnb.png" alt="Airbnb" class="bnb-icon" </a>
         </footer>
 
 
+        <script>
+            const toggle = document.querySelector('.menu-toggle');
+            const links = document.querySelector('.nav-links');
+
+            toggle.addEventListener('click', () => {
+                links.classList.toggle('show');
+            });
+        </script>
 </body>
 
 </html>
